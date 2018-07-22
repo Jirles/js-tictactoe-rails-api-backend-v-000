@@ -1,5 +1,7 @@
 class GamesController < ApplicationController
   # Add your GamesController code here
+  require 'pry'
+  
   def index
   end
 
