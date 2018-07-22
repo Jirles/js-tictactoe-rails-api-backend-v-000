@@ -9,7 +9,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    binding.pry 
+    binding.pry
     @game = Game.create(state: games_params)
   end
 
