@@ -19,9 +19,4 @@ class GamesController < ApplicationController
     @game = Game.update(id: params[:id], state: params[:state])
   end
 
-  private
-
-  def games_params
-    params.require(:state)
-  end
 end
