@@ -3,6 +3,7 @@ class GamesController < ApplicationController
   # Add your GamesController code here
 
   def index
+    @games = Game.
   end
 
   def show
