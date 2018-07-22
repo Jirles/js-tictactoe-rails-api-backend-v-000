@@ -16,6 +16,7 @@ class GamesController < ApplicationController
   end
 
   def update
+    binding.pry
     @game = Game.find(id: params[:id])
     @game.state = params[:state]
     @game.save
