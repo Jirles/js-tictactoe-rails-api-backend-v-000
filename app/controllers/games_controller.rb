@@ -15,7 +15,7 @@ class GamesController < ApplicationController
 
   private
 
-  def games_parms
+  def games_params
     params.require(:state)
   end
 end
