@@ -17,7 +17,7 @@ class GamesController < ApplicationController
 
   def update
     binding.pry
-    @game = Game.find(id: params[:id])
+    @game = Game.find(params[:id])
     @game.state = params[:state]
     @game.save
     render json: @game, status: 200
