@@ -7,7 +7,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.create(state: games_params)
+    @game = Game.create(state: params["state"].serialize())
   end
 
   def update
