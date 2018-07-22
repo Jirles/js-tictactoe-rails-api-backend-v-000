@@ -7,8 +7,15 @@ class GamesController < ApplicationController
   end
 
   def create
+
   end
 
   def update
-  end 
+  end
+
+  private
+
+  def games_parms
+    params.require(:game).permit(:state)
+  end
 end
