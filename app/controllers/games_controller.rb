@@ -6,7 +6,7 @@ class GamesController < ApplicationController
   def show
   end
 
-  def new
+  def create
   end
 
   def update
