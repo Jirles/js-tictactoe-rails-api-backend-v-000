@@ -1,7 +1,7 @@
 require 'pry'
 class GamesController < ApplicationController
   # Add your GamesController code here
-  
+
   def index
   end
 
@@ -9,6 +9,7 @@ class GamesController < ApplicationController
   end
 
   def create
+    binding.pry 
     @game = Game.create(state: params["state"].serialize())
   end
 
